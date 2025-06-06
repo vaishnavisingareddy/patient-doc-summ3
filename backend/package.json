@@ -1,14 +1,16 @@
 {
-  "name": "cors",
+  "name": "patient-doc-backend",
   "version": "1.0.0",
-  "description": "",
+  "description": "Backend for patient doc summarizer app",
   "keywords": [],
   "license": "ISC",
   "author": "",
   "type": "commonjs",
-  "main": "index.js",
+  "main": "dist/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "ts-node server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js"
   },
   "dependencies": {
     "body-parser": "^2.2.0",
